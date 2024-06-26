@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import { Container } from "react-bootstrap";
 import Foot from "./components/Foot";
-import HomeScreen from "./screens/HomeScreen";
+import { Container } from "react-bootstrap";
+import { Outlet } from "react-router-dom";
 const App = () => {
   return (
     <>
       <Navbar />
       <main className="py-3">
         <Container>
-          <HomeScreen />
+          <Outlet />
         </Container>
       </main>
       <Foot />
